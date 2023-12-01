@@ -1,0 +1,87 @@
+$color-principal: rgb(163, 168, 168);
+$color-secundario: rgb(52, 242, 242);
+$black: #222020;
+$with: #fff;
+
+$letra-title: Dancing Script;
+$letra-general: crimson text;
+
+div.grid{
+    gap: 1rem;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+
+    div.container-perfume-personal{
+        border-style: solid;
+        padding: 1rem;
+        border-radius: 10px;
+
+        img{
+            width: 400px;
+            margin-left: 0;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width:475px) {
+    div.grid{
+        div.container-perfume-personal{
+            margin-bottom: 10px;
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    div.grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+p.product-name{
+    font-family: $letra-general;
+    color: $black;
+    text-align: center;
+    font-family: $black;
+    font-weight: bold;
+}
+
+p.product-price{
+    font-family: $letra-general;
+    color: $black;
+    text-align: center;
+    font-family: $black;
+    font-weight: bold;
+}
+
+button{
+    margin:auto;
+    border-radius: 5px;
+    color: $color-secundario;
+    background-color: $with;
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: $letra-general;
+}
+
+button span{
+    background-color: $black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}

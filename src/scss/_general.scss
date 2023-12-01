@@ -1,0 +1,113 @@
+$color-principal: rgb(163, 168, 168);
+$color-secundario: rgb(52, 242, 242);
+$black: #222020;
+$with: #fff;
+
+$letra-title: Dancing Script;
+$letra-general: crimson text;
+
+nav{
+    background-color: $black;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+
+    a{
+        text-decoration: none;
+        color: rgb(52, 242, 242);
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: crimson text; 
+    }
+    
+    a:hover{
+        color: red;
+    }
+    
+}
+
+@media(max-width:992px){
+    nav{
+    display: grid;
+    justify-content: repeat(1, 1fr);
+    text-align: center;
+    gap: 1rem;
+    }
+}
+
+h1{
+    text-align: center;
+    font-family: Dancing Script;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+@media(max-width:475px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+div.container-img-principal{
+    display: flex;
+    justify-content: center;
+    
+    img{
+        position: relative;
+        width: 80%;
+        border-radius: 15px; 
+        box-shadow: 5px 8px 15px rgb(74, 73, 73);
+    }
+
+    div{
+        position: absolute;
+        margin-top: 100px;
+        color: white;
+        font-family: $letra-general;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:992px){
+    div.container-img-principal{
+        img{
+            margin-left: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+        div{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+h2{
+    font-family: Dancing Script;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-left: 150px;
+}
+
+@media(max-width:475px){
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+footer{
+    background-color: $color-principal;
+    padding: 0.5rem;
+
+    p{
+        text-align: center;
+        font-family: $color-secundario;
+        font-size: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,19 @@
+$color-principal: rgb(163, 168, 168);
+$color-secundario: rgb(52, 242, 242);
+$black: #222020;
+$with: #fff;
+
+$letra-title: Dancing Script;
+$letra-general: crimson text;
+
+a.informacion-title{
+    text-decoration: none;
+    h1.title-informacion{
+        color: $color-secundario;
+    }
+}
+
+body.container{
+    background-color: $color-principal;
+    padding: 5rem;
+}

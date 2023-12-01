@@ -1,0 +1,66 @@
+$color-principal: rgb(163, 168, 168);
+$color-secundario: rgb(52, 242, 242);
+$black: #222020;
+$with: #fff;
+
+$letra-title: Dancing Script;
+$letra-general: crimson text;
+
+section.flex-layout{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+
+    div{
+        margin-top: 2rem;
+        padding: 1.5rem;
+        font-family: $letra-general;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-top: 0;
+        text-align: left;
+        font-size: 30px;
+        line-height: 2rem;
+        padding: 3rem;
+    }
+
+    img{
+        padding: 2rem;
+        margin-top: 50px;
+        margin: auto;
+        width: 700px;
+        height: 600px;
+    }
+}
+
+@media(max-width:992px){
+    section.flex-layout{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0;
+    h2{
+        margin-top: 0;
+        font-size: 40px;
+        margin-left: 0;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.5rem;
+        padding: 0;
+    }
+    img{
+        margin-left: 0;
+        margin-top: 0;
+        width: 80%;
+        height: auto;
+    }
+}
+    
+}
